@@ -14,6 +14,14 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
 
+Rails/FilePath:
+  Exclude:
+    - 'config/environments/development.rb'
+
+Rails/Output:
+  Exclude:
+    - 'db/seeds.rb'
+
 Style/AsciiComments:
   Enabled: false
 
