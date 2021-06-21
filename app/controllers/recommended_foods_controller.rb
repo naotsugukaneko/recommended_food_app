@@ -20,7 +20,10 @@ class RecommendedFoodsController < ApplicationController
 
   def edit; end
 
-  def update; end
+  def update
+    @recommended_food.update!(food_params)
+    redirect_to @recommended_food
+  end
 
   def destroy
     @recommended_food.destroy
