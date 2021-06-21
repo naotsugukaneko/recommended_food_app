@@ -2,7 +2,7 @@
   <p>【メールアドレス】<%= food.user.email %></p>
   <p>【料理名】<%= food.name %></p>
   <p>
-    <%= link_to "詳細", "recommended_food#show" %>
+    <%= link_to "詳細", recommended_food_path(food) %>
     <%= link_to "編集", "recommended_food#edit" %>
     <%= link_to "削除", recommended_food_path(food), method: :destroy, data: { confirm: "削除しますか?" } %>
   </p>

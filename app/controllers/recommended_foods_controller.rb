@@ -12,7 +12,9 @@ class RecommendedFoodsController < ApplicationController
     redirect_to recommended_food
   end
 
-  def show; end
+  def show
+    @recommended_food = RecommendedFood.find(params[:id])
+  end
 
   def edit; end
 

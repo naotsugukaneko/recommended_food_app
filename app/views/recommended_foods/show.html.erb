@@ -1,2 +1,10 @@
-<h1>RecommendedFoods#show</h1>
-<p>Find me in app/views/recommended_foods/show.html.erb</p>
+<h1>投稿詳細</h1>
+  <p>【メールアドレス】<%= @recommended_food.user.email %></p>
+  <p>【料理名】<%= @recommended_food.name %></p>
+  <p>【コメント】<%= simple_format(@recommended_food.comment) %></p>
+  <p>
+    <%= link_to "詳細", recommended_food_path(@recommended_food) %>
+    <%= link_to "編集", "recommended_food#edit" %>
+    <%= link_to "削除", recommended_food_path(@recommended_food), method: :destroy, data: { confirm: "削除しますか?" } %>
+  </p>
+<hr>
