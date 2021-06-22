@@ -1,4 +1,4 @@
-<%= form_with model: @recommended_food, url: "/recommended_foods", method: :post, local: true do |form| %>
+<%= form_with model: @recommended_food, local: true do |form| %>
   <div>
     <p>料理名<%= form.text_field :name, required: true %></p>
     <p>コメント<%= form.text_area :comment %></p>
