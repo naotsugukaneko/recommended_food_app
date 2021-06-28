@@ -34,3 +34,5 @@ yarn-debug.log*
 
 .DS_Store
 /vendor/bundle
+#開発環境での投稿画像をGitHubの管理下から除外
+/public/uploads/
