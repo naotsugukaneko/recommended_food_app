@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      recommended_food: 料理
+    attributes:
+      recommended_food:
+        name: 料理名
+        comment: コメント
